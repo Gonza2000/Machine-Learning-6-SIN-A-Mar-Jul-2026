@@ -8,8 +8,8 @@ RUN git lfs install --system
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 ENV PATH="/root/.local/bin:$PATH"
 WORKDIR /app
-RUN uv venv .venv
+RUN uv venv Gonzalo
 COPY requirements.txt .
-RUN uv pip install --python .venv/bin/python -r requirements.txt
-ENV VIRTUAL_ENV=/app/.venv
-ENV PATH="/app/.venv/bin:$PATH"
+RUN uv pip install --python Gonzalo/bin/python -r requirements.txt
+ENV VIRTUAL_ENV=/app/Gonzalo
+ENV PATH="/app/Gonzalo/bin:$PATH"
