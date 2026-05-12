@@ -12,7 +12,7 @@
                 "Charliemarsh.ruff",
                 "ms-azuretools.vscode-containers"
             ],
-            "setting": {
+            "settings": {
                 "python.defaultInterpreterPath": "/app/.gabriel/bin/python",
                 "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
