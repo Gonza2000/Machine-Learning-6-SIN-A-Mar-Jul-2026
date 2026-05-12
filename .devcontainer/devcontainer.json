@@ -13,10 +13,12 @@
                 "ms-azuretools.vscode-containers"
             ],
             "settings": {
-                "python.defaultInterpreterPath": "/app/.gabriel/bin/python",
+                // Ruta absoluta al python del entorno virtual
+                "python.defaultInterpreterPath": "/workspaces/Machine-Learning-6-SIN-A-Mar-Jul-2026/.venv/bin/python",
                 "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
         }
     },
-    "postCreateCommand": "echo 'source /app/.gabriel/bin/activate' >> ~/.bashrc"
+    // Comando para que la terminal se abra con el venv activo
+    "postCreateCommand": "echo 'source .venv/bin/activate' >> ~/.bashrc"
 }
