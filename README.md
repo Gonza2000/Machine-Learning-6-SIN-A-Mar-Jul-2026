@@ -3,29 +3,44 @@
 ## Integrantes
 Gonzalo Cárdenas & Gabriel Vásquez
 
+---
+
 ## Dataset Choice
-We selected the **Titanic Survivor Dataset** as it provides an excellent mix of categorical and numerical features for a fundamental classification problem. The data is clean enough for quick prototyping but still requires careful preprocessing and feature engineering. It allows us to experiment with various models and easily interpret the survival rate predictions. The manageable dataset size makes it ideal for a reproducible, containerized environment workflow.
+
+For this project, we selected the **Wine Quality Dataset** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/186/wine+quality?utm_source=chatgpt.com).  
+This dataset contains physicochemical measurements of Portuguese “Vinho Verde” wines and their associated quality scores assigned by wine experts.
+
+The dataset is especially valuable because it supports two different machine learning approaches:
+
+- **Regression Task:** Predicting the wine quality score.
+- **Classification Task:** Classifying wines as:
+  - **Good wine:** quality ≥ 7
+  - **Bad wine:** quality < 7
+
+We chose this dataset because it offers:
+- A realistic supervised learning problem.
+- Multiple continuous numerical features suitable for exploratory analysis and feature engineering.
+- Opportunities to compare regression and classification models within the same dataset.
+- A manageable size that enables reproducible experimentation inside a containerized environment.
+
+Additionally, the dataset is widely recognized in the machine learning community, making it ideal for benchmarking and educational purposes.
+
+---
 
 ## Tool Justification
-We chose **VS Code Devcontainers** to guarantee absolute environment reproducibility across any machine that runs Docker, eliminating the "it works on my machine" problem. **uv** was selected as our package manager and resolver due to its blazing-fast performance compared to standard pip and its excellent dependency locking capabilities (`uv.lock`). We explicitly build our environments utilizing standard Python slim images because they are lightweight and have low attack surfaces. This tooling stack ultimately ensures that running our analytical notebooks requires zero manual configuration from the reviewer.
 
-## How to Clone and Run
-To replicate our results, run the following three commands (make sure Docker and VS Code are installed):
+We chose **VS Code Devcontainers** to ensure complete environment reproducibility across any machine capable of running Docker, eliminating the classic *“it works on my machine”* problem.
 
-```bash
-git clone https://github.com/jonathanetitoo/Machine-Learning-6-SIN-A-Mar-Jul-2026.git
-cd Machine-Learning-6-SIN-A-Mar-Jul-2026
-code .
-```
-*Once VS Code opens, click **"Reopen in Container"** when prompted, and run the `notebooks/main.ipynb` notebook top-to-bottom.*
+We selected **uv** as the package manager because of its:
+- Extremely fast dependency resolution.
+- Reliable lockfile generation (`uv.lock`).
+- Lightweight and modern Python workflow.
 
-## Results Summary
+Our environment is built using slim Python Docker images to:
+- Reduce image size.
+- Improve portability.
+- Minimize attack surface and unnecessary dependencies.
 
-| Model / Analysis        | Metric                 | Result |
-|-------------------------|------------------------|--------|
-| Baseline Survival Rate  | Mean Survival Accuracy | 60.00% |
-| Dataset Size            | Rows                   | 5      |
-| Sample Features Used    | Age, Pclass, Sex       | N/A    |
+This tooling stack guarantees that reviewers can reproduce all experiments, notebooks, and results with virtually zero manual configuration.
 
-## AI Usage Disclosure
-AI (Gemini / Code Agent) was used to structure this repository, help write the Dockerfile, generate the boilerplate devcontainer configurations, and formulate the base environment setup to meet the strict reproducibility requirements of this workshop.
+---
