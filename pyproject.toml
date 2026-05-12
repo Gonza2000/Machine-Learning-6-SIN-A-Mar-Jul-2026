@@ -1,7 +1,7 @@
 [project]
 name = "machine-learning-6-sin-a-mar-jul-2026"
 version = "0.1.0"
-description = "Add your description here"
+description = "Linear & Logical regression for Wine Quality DataSet"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
