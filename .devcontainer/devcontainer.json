@@ -1,7 +1,7 @@
 {
-    "name": "ML Workshop - Work Environment",
-    "build":{
-        "dockerfile":"Dockerfile"
+    "name": "Ml WorkShop 2 - Work Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
     },
     "customizations": {
         "vscode": {
@@ -9,14 +9,14 @@
                 "ms-python.python",
                 "ms-toolsai.jupyter",
                 "ms-toolsai.jupyter-renderers",
-                "charliermarsh.ruff",
+                "Charliemarsh.ruff",
                 "ms-azuretools.vscode-containers"
             ],
-            "settings":{
-                "python.defaultInterpreterPath": "/app/.venv/bin/python",
+            "setting": {
+                "python.defaultInterpreterPath": "/app/.gabriel/bin/python",
                 "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
         }
     },
-    "postCreateCommand": "echo 'source /app/.venv/bin/activate' >> ~/.bashrc && /app/.venv/bin/python -m ipykernel install --user --name gonzalo_env --display-name 'Entorno de Gonzalo (.venv)'"
+    "postCreateCommand": "echo 'source /app/.gabriel/bin/activate' >> ~/.bashrc"
 }
