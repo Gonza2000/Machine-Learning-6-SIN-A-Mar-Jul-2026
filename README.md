@@ -1,2 +1,2 @@
-# Machine-Learning-6-SIN-A-Mar-Jul-2026
-Repo for the ML course
+# Proyecto Final de Parcial 2
+## Gonzalo Cárdenas & Gabriel Vásquez
