@@ -14,9 +14,9 @@ WORKDIR /app
 
 RUN uv venv .gabriel
 
-COPY requirements.txt .
+COPY pyproject.toml uv.lock ./
 
-RUN  uv pip install --python .gabriel/bin/python -r requirements.txt
+RUN  uv pip install --python .gabriel/bin/python .
 
 ENV VIRTUAL_VENV=/app/.gabriel
 ENV PATH="/app/.gabriel/bin:$PATH"
