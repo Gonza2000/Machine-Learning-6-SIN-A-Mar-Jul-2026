@@ -14,10 +14,10 @@
                 "ms-azuretools.vscode-containers"
             ],
             "settings": {
-                "python.defaultInterpreterPath": "/workspaces/Machine-Learning-6-SIN-A-Mar-Jul-2026/.venv/bin/python",
+                "python.defaultInterpreterPath": "/app/.venv/bin/python",
                 "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
         }
     },
-    "postCreateCommand": "echo 'source .venv/bin/activate' >> ~/.bashrc"
+    "postCreateCommand": "echo 'source /app/.venv/bin/activate' >> ~/.bashrc"
 }
