@@ -15,3 +15,6 @@ COPY pyproject.toml uv.lock ./
 
 RUN uv venv .venv
 RUN uv pip install --python .venv/bin/python -r pyproject.toml
+
+ENV VIRTUAL_ENV=/app/.venv
+ENV PATH="/app/.venv/bin:$PATH"
