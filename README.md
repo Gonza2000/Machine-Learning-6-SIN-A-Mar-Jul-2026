@@ -29,22 +29,20 @@ Additionally, the dataset is widely recognized in the machine learning community
 
 ## Tool Justification
 
-We chose **VS Code Devcontainers** to ensure complete environment reproducibility across any machine capable of running Docker, eliminating the classic *“it works on my machine”* problem.
+We utilized Pandas for efficient data manipulation and Scikit-learn to implement robust Linear and Logistic Regression models tailored for our physicochemical analysis. Our workflow is powered by uv and Docker Devcontainers to ensure extremely fast dependency resolution and a reproducible, isolated environment across any machine. This stack was chosen specifically to handle the dataset's numerical complexity while eliminating "it works on my machine" conflicts during the training phase. By combining these modern package managers with industry-standard ML libraries, we guaranteed a lightweight yet professional pipeline for all experiments.
 
-We selected **uv** as the package manager because of its:
-- Extremely fast dependency resolution.
-- Reliable lockfile generation (`uv.lock`).
-- Lightweight and modern Python workflow.
+## Clone and Run Instructions
 
-Our environment is built using slim Python Docker images to:
-- Reduce image size.
-- Improve portability.
-- Minimize attack surface and unnecessary dependencies.
+To reproduce the environment and run the project, execute the following commands:
+git clone
+cd
+devcontainer up --workspace
 
-This tooling stack guarantees that reviewers can reproduce all experiments, notebooks, and results with virtually zero manual configuration.
+Enter the brach and get the link for cloning, the create the needed codespace
 
 ## AI Usage Disclosure
 
+For this project, we integrated Gemini as a core technical assistant to streamline the development of the machine learning pipeline. Its usage was necessary to optimize the Python code structure, debug complex data transformations in Pandas, and refine the training scripts for our regression models, gemini provided critical support in automating repetitive boilerplate code and suggesting best practices for model evaluation.
 
 
 
