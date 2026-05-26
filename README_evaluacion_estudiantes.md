@@ -3,7 +3,7 @@
 **Curso:** Machine Learning · 6° SIN-A · UIDE  
 **Duración:** 90 minutos · **Modalidad:** libro abierto (IA permitida)  
 **Total:** 3 puntos
-
+**Primer Commit 1 14:37**
 ---
 
 ## 📋 Para los estudiantes
