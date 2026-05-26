@@ -18,5 +18,5 @@
             }
         }
     },
-    "postCreateCommand":"echo 'source /app/Gonzalo/bin/activate' >> ~/.bashrc"
+    "postCreateCommand": "echo 'source /app/Gonzalo/bin/activate' >> ~/.bashrc && /app/Gonzalo/bin/python -m ipykernel install --user --name Gonzalo --display-name 'Gonzalo'"
 }
