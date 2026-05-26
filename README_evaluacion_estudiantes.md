@@ -5,6 +5,7 @@
 **Total:** 3 puntos
 **Primer Commit 1 14:37**
 **Segundo Commit 2 14:57**
+**Tercer Commit 3 15:14**
 ---
 
 ## 📋 Para los estudiantes
